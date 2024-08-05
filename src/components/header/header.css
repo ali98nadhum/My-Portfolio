@@ -1,0 +1,164 @@
+
+
+/* ===== header ===== */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    padding-top: 1.2rem;
+}
+
+header .menu{
+    display: none;
+}
+
+header nav{
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px #2323242a;
+}
+
+
+
+header nav ul{
+    display: flex;
+    gap: 16px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover{
+    opacity: 1;
+    font-size: 0.9rem;
+    color: var(--blue);
+}
+
+header button{
+    font-size: 1.2rem;
+}
+
+header .icon-sun{
+    color: orange;
+}
+/* ===== model pop up ===== */
+header .model{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(40, 40, 48 , 0.91);
+    z-index: 99;
+}
+
+@keyframes modelAnim{
+    0% {scale: 0;}
+    60% {scale: 1.2;}
+    100% {scale: 1;}
+}
+
+header .model ul{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+    animation: modelAnim 0.7s 1;
+}
+
+header .model ul li{
+    list-style: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+
+header .model ul li:last-child{
+    border: none;
+}
+
+header .model ul li:first-child{
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+}
+
+header .model ul li a{
+    text-decoration: none;
+    color: var(--title);
+    font-size: 1rem;
+}
+
+header .model ul li a:hover{
+    opacity: 1;
+    font-size: 0.9rem;
+    color: var(--blue);
+}
+
+/* ===== icon button for model ===== */
+header .icon-menu,
+header .mode{
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 1px solid rgba(244, 165, 96, 0.250);
+    transition: 0.2s;
+}
+
+header .icon-menu:hover,
+header .mode:hover{
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 96);
+}
+
+header .icon-menu{
+    text-align: center;
+}
+
+header .mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .model ul .icon-close{
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+
+header .model ul .icon-close:hover{
+    font-size: 1.8rem;
+    color: crimson;
+    rotate: 180deg;
+}
+
+
+/* ===== media screen ( Responsive Design ) ===== */
+@media (max-width:700px){
+    header nav{
+        display: none;
+    }
+
+    header .menu{
+        display: block;
+    }
+}

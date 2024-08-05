@@ -1,0 +1,124 @@
+.contact-us .icon-envelope-o {
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+.contact-us .title {
+    font-size: 2.1rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+
+.contact-us .subtitle {
+    color: var(--subtitle);
+    margin-bottom: 2rem;
+    line-height: 1.65rem;
+}
+
+.contact-us label {
+    color: var(--subtitle);
+}
+
+.contact-us #email,
+.contact-us #message {
+    all: unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.light .contact-us #email,
+.light .contact-us #message{
+    background-color: rgb(255, 255, 255, 0.162);
+    border: 1ps solid rgba(128, 128, 128, 0.105);
+    box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+    color: #232324;
+}
+
+.light .contact-us #email:focus,
+.light .contact-us #message:focus {
+    border: 1px solid rgb(78, 80, 80);
+}
+
+
+
+.contact-us #message {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+.contact-us #email:focus,
+.contact-us #message:focus {
+    border: 1px solid orange;
+}
+
+.contact-us #email:hover,
+.contact-us #message:hover {
+    border: 1px solid orange;
+}
+
+
+.contact-us .send-btn {
+    background-color: rgba(36, 37, 46, 1);
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 1.8rem;
+    border: 1px solid rgb(63, 63, 70);
+}
+
+
+.contact-us .send-btn:hover {
+    scale: 0.95;
+}
+
+
+.contact-us .test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media(max-width:1100px){
+    .contact-animation{
+        display: none;
+    }
+}
+
+
+@media(max-width:600px) {
+    .contact-us .animation {
+        display: none;
+    }
+
+    .contact-us .test form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-us #email,
+    .contact-us #message {
+        margin-left: 0;
+        width: 100%;
+        padding: 0.7rem 0;
+        margin-top: 1rem;
+    }
+
+    .contact-us .test form .flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contact-us .send-btn {
+        width: 30%;
+    }
+}

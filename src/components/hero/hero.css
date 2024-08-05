@@ -1,0 +1,76 @@
+
+/* ============================ */
+/*        left section */
+/* ============================ */
+.hero{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.hero .left-section{
+    flex-grow: 1;
+    gap: 0.6rem;
+}
+
+.hero .left-section .avatar{
+    display: flex;
+    align-items: end;
+}
+
+.hero .left-section .avatar img{
+    width: 120px;
+    border-radius: 100%;
+    border: 2px solid green;
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgba(203, 200, 200 , 0.586) inset;
+}
+
+.hero .left-section .avatar .icon-verified{
+    color: var(--blue);
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.hero .left-section .title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+
+.hero .left-section .subtitle{
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-bottom: 32px;
+}
+
+
+.hero .left-section .icons{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+
+.hero .left-section .icons .icon:hover{
+    font-size: 1.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #d4d4d8;
+}
+
+
+
+
+
+
+/* ============================ */
+/*        right section */
+/* ============================ */
+
+
+.right-section{
+    /* border: 2px solid red; */
+}
